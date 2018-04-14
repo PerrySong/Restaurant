@@ -55,6 +55,6 @@ app.use("/", indexRoutes);
 app.use("/restaurants", restaurantRoutes);
 app.use("/restaurants/:id/comments", commentRoutes);
 
-app.listen(process.env.PORT, process.env.IP, function() {
-    console.log("YelpCamp Server has started!!!");
+app.listen(8080, function() {
+    console.log("Restaurant Server has started!!!");
 });
