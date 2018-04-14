@@ -1,0 +1,36 @@
+.thumbnail a>img, .thumbnail>img{
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+#index-jumbotron {
+    margin-left: 6%;
+    margin-right: 6%;
+    border-radius: 6px;
+}
+
+#index-content {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+#delete-form {
+    display: inline;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.middle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}

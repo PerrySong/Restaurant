@@ -1,0 +1,39 @@
+
+<% include ../partials/header %>
+
+</header>
+<div class="jumbotron" id="index-jumbotron">
+    <div class="container">
+            <h1>This is the restaurant Page</h1>
+            <p>View our hand-picked restaurants from all over the world!</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="/restaurants/new">add new restaurant</a>
+        </p>
+    </div>
+</div>
+
+    <div class="row text-center" id="index-content" style="display:flex; flex-wrap: wrap;">
+        <div class="col-lg-12 col-md-3 col-sm-6">
+            <h3>Our Most Popular restaurant!</h3>
+        </div>
+    
+        <% restaurants.forEach(function(camp) {%>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail"> 
+                    <img src="<%= camp.image %>">
+                
+                    <div class="caption">
+                        <h4><%=camp.name%></h4>
+                    </div>
+                    <p>
+                        <a href="/restaurants/<%= camp._id %>" class="btn btn-primary">More Info</a>
+                    </p>
+                </div>
+                
+            </div>
+            
+        <% }); %>
+    </div>
+</div>
+
+<% include ../partials/footer %>
